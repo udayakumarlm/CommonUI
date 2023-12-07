@@ -1,0 +1,10 @@
+﻿<Router AppAssembly="@typeof(MauiProgram).Assembly"
+AdditionalAssemblies="new[] { 
+        typeof(RazorClassLibrary1.TestClass).Assembly
+    }"
+>
+    <Found Context="routeData">
+        <RouteView RouteData="@routeData" DefaultLayout="@typeof(Components.Layout.MainLayout)" />
+        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+    </Found>
+</Router>
